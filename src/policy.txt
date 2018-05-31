@@ -1,0 +1,19 @@
+﻿> show cmp policy ns_adv_cmp_segesservices -format FORMATTED
+        Name: ns_adv_cmp_segesservices
+        Rule: HTTP.RES.HEADER("Seges-NsCompressable").EQ("1")
+        Response Action: COMPRESS
+        Hits: 18
+        Bytes in: 1027842
+        Bytes out: 271618
+        Bandwidth savings: 73.57%
+        Compression ratio: 3.78:1
+        Average client transaction time: 50.40 msec
+        Average server response generation time: 49.47 msec
+
+
+        Policy is bound to following CS VSERVERS
+1)      Bound to: RES VSERVER mactest
+        Priority: 100
+        GotoPriorityExpression: END
+
+ Done
